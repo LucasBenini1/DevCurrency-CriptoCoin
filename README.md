@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# DevCurrency - Aplicação React e TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web construída com **React**, **TypeScript** e **Vite**, que consome uma API de criptomoedas (CapCoin) e exibe uma lista paginada de criptomoedas. A aplicação também possui uma funcionalidade de busca e uma página de detalhes para cada criptomoeda.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Exibição de uma lista paginada de criptomoedas, carregando 10 moedas por vez.
+- Botão para carregar mais 10 criptomoedas por vez.
+- Funcionalidade de busca e clique para encontrar uma criptomoeda específica.
+- Página de detalhes que exibe informações detalhadas da criptomoeda ao clicar ou pesquisar.
+- Responsividade mobile.
 
-## Expanding the ESLint configuration
+## Demonstração
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Demonstração da Aplicação](./img/Sem%20título.png)
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- CSS Modules ou Styled Components para estilização
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Instalação
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/cripto-visor.git
+
+## Licença
+
+Este projeto foi desenvolvido seguindo os passos do curso de React+Typescript do proprietário **Matheus Fraga**, na plataforma **Udemy**.
+Funcionalidades adicionais foram adicionadas por **Lucas Benini**.
+
